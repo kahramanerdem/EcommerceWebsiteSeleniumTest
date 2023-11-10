@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Cucumber.TestNGTestRunner">
+      <class name="FrameworkSelenium.Tests.StandAloneTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="submitOrder"/>
+          <include name="OrderHistoryTest"/>
+          <include name="launchApplication"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- Cucumber.TestNGTestRunner -->
+      </class> <!-- FrameworkSelenium.Tests.StandAloneTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
