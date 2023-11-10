@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-29T14:27:18Z" name="Suite" finished-at="2023-04-29T14:31:57Z" duration-ms="278976">
+    <groups>
+      <group name="Purchase">
+        <method signature="StandAloneTest.submitOrder(java.util.HashMap)[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" name="submitOrder" class="FrameworkSelenium.Tests.StandAloneTest"/>
+      </group> <!-- Purchase -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.ProductErrorValidition()[pri:0, instance:FrameworkSelenium.Tests.ErrorValidationsTest@265adfad]" name="ProductErrorValidition" class="FrameworkSelenium.Tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2023-04-29T14:27:18Z" name="Submit Order Test" finished-at="2023-04-29T14:31:56Z" duration-ms="277111">
+      <class name="FrameworkSelenium.Tests.StandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" started-at="2023-04-29T14:27:18Z" name="launchApplication" finished-at="2023-04-29T14:31:43Z" duration-ms="264398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" started-at="2023-04-29T14:31:45Z" name="submitOrder" data-provider="getData" finished-at="2023-04-29T14:31:50Z" duration-ms="4439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Haluk123, email=halukfaruk@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" started-at="2023-04-29T14:31:50Z" name="logOut" finished-at="2023-04-29T14:31:50Z" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" started-at="2023-04-29T14:31:50Z" name="submitOrder" data-provider="getData" finished-at="2023-04-29T14:31:54Z" duration-ms="4663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Merhaba1, email=sselenium@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" started-at="2023-04-29T14:31:54Z" name="logOut" finished-at="2023-04-29T14:31:54Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" started-at="2023-04-29T14:31:54Z" name="OrderHistoryTest" finished-at="2023-04-29T14:31:55Z" depends-on-methods="FrameworkSelenium.Tests.StandAloneTest.submitOrder" duration-ms="1019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:FrameworkSelenium.Tests.StandAloneTest@7582ff54]" started-at="2023-04-29T14:31:55Z" name="logOut" finished-at="2023-04-29T14:31:56Z" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- FrameworkSelenium.Tests.StandAloneTest -->
+    </test> <!-- Submit Order Test -->
+    <test started-at="2023-04-29T14:27:18Z" name="Error Validations Test" finished-at="2023-04-29T14:31:57Z" duration-ms="278976">
+      <class name="FrameworkSelenium.Tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameworkSelenium.Tests.ErrorValidationsTest@265adfad]" started-at="2023-04-29T14:27:18Z" name="launchApplication" finished-at="2023-04-29T14:31:43Z" duration-ms="264539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidition()[pri:0, instance:FrameworkSelenium.Tests.ErrorValidationsTest@265adfad]" started-at="2023-04-29T14:31:43Z" name="ProductErrorValidition" finished-at="2023-04-29T14:31:47Z" duration-ms="3788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidition -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:FrameworkSelenium.Tests.ErrorValidationsTest@265adfad]" started-at="2023-04-29T14:31:47Z" name="logOut" finished-at="2023-04-29T14:31:47Z" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method signature="LogOutErrorValidation()[pri:0, instance:FrameworkSelenium.Tests.ErrorValidationsTest@265adfad]" started-at="2023-04-29T14:31:47Z" name="LogOutErrorValidation" finished-at="2023-04-29T14:31:47Z" depends-on-methods="FrameworkSelenium.Tests.ErrorValidationsTest.ProductErrorValidition" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutErrorValidation -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:FrameworkSelenium.Tests.ErrorValidationsTest@265adfad]" started-at="2023-04-29T14:31:47Z" name="logOut" finished-at="2023-04-29T14:31:57Z" duration-ms="10195" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"li:nth-child(5)"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.5', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c6ce6d6ec3559f526dc39f9bf3c443e, findElement {using=css selector, value=li:nth-child(5)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/8h/kbtcb9kn4sl...}, goog:chromeOptions: {debuggerAddress: localhost:51069}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51069/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c6ce6d6ec3559f526dc39f9bf3c443e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"li:nth-child(5)"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.5', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c6ce6d6ec3559f526dc39f9bf3c443e, findElement {using=css selector, value=li:nth-child(5)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/8h/kbtcb9kn4sl...}, goog:chromeOptions: {debuggerAddress: localhost:51069}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51069/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c6ce6d6ec3559f526dc39f9bf3c443e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at FrameworkSelenium.TestComponents.BaseTest.logOut(BaseTest.java:105)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="close()[pri:0, instance:FrameworkSelenium.Tests.ErrorValidationsTest@265adfad]" started-at="2023-04-29T14:32:03Z" name="close" finished-at="2023-04-29T14:32:04Z" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- FrameworkSelenium.Tests.ErrorValidationsTest -->
+    </test> <!-- Error Validations Test -->
+  </suite> <!-- Suite -->
+</testng-results>

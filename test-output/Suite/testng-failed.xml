@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="FrameworkSelenium.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Error Validations Test(failed)" parallel="tests">
+    <classes>
+      <class name="FrameworkSelenium.Tests.ErrorValidationsTest">
+        <methods>
+          <include name="LoginErrorValidation"/>
+          <include name="ProductErrorValidition"/>
+          <include name="launchApplication"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- FrameworkSelenium.Tests.ErrorValidationsTest -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
